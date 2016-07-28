@@ -1,0 +1,42 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, textarea, select, optgroup, option, fieldset, legend, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+.module-grid-view .grid-view .grid-view-item {
+    width: 142px;
+    height: 122px;
+    float: left;
+    margin: 4px 4px 0 0;
+    text-align: center;
+}
+.module-grid-view .grid-view-item .file-icon {
+    position: relative;
+    margin: 0 auto;
+    width: 90px;
+    height: 92px;
+    border: 2px solid #FFF;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+.module-grid-view .grid-view-item .file-name {
+    display: block;
+    padding: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+}
+.module-grid-view .grid-view-item .checkbox {
+    background: url(../images/checkbox_8c741da.png) 6px -36px no-repeat;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+.dir-large {
+    background: url(../images/folder.png) no-repeat;
+}
