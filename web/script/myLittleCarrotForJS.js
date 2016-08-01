@@ -193,7 +193,7 @@ myLittleCarrotForJS.getViewSize = function () {
     var db = document.body;
     var viewW = de.clientWidth == 0 ? db.clientWidth : de.clientWidth;
     var viewH = de.clientHeight == 0 ? db.clientHeight : de.clientHeight;
-    return Array(viewW, viewH);
+    return [viewW, viewH];
 }
 
 //获取网页被卷去的位置,返回的是一个对象，有x,y两个属性

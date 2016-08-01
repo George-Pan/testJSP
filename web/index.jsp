@@ -1,17 +1,10 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2016/7/22
-  Time: 16:59
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="utf-8">
     <title>测试显示缩略图</title>
+    <!--曹大师跨平台代码-->
     <script type="text/javascript" src="script/myLittleCarrotForJS.js"></script>
-    <%--曹大师跨平台代码--%>
     <script type="text/javascript" src="script/jsThumbnails.js"></script>
     <link rel="stylesheet" href="css/styleThumbnails.css"/>
 </head>
@@ -22,8 +15,8 @@
          style="position: absolute; z-index: 9; display: none; background-color: #eee; width:700px; height:500px;left:200px;top:200px; border:1px solid #222;">
         <img src="" alt="" id="showImg"/>
     </div>
-    <%--上部工具条--%>
-    <div class="module-toolbar g-clearfix"  style="display: none;">
+    <!--上部工具条-->
+    <div class="module-toolbar g-clearfix" style="display: none;">
         <div class="default-dom"><%--切换列表/网格显示--%>
             <div class="list-grid-switch grid-switched-on">
                 <a class="list-switch" href="javascript:void(0)">列表</a>
@@ -55,9 +48,9 @@
             </div>
         </div>
     </div>
-    <%--核心缩略图显示层--%>
+    <!--核心缩略图显示层-->
     <div class="module-grid-view">
-        <div class="grid-view" style="display: block;">
+        <div class="grid-view" id="grid-view" style="display: block;">
             <div class="grid-view-item" _position="0" _installed="1" style="display: block;">
                 <div class="file-icon">
                     <img class="thumb"
@@ -114,5 +107,11 @@
             </div>
         </div>
     </div>
+    <div>
+        <%
+            out.println("Hello World again！");
+        %>
+    </div>
+
 </body>
 </html>
