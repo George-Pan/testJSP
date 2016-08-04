@@ -52,7 +52,7 @@
     <!--核心缩略图显示层-->
     <div class="module-grid-view">
         <div class="grid-view" id="grid-view" style="display: block;">
-            <div class="grid-view-item" _position="0" _installed="1" style="display: block;">
+            <div class="grid-view-item" style="display: block;">
                 <div class="file-icon">
                     <img class="thumb"
                          src="thumbnails/Monet-0281.jpg"
@@ -63,7 +63,7 @@
                     <a class="filename" href="javascript:void(0);" title="Monet-0281.jpg">Monet-0281.jpg</a>
                 </div>
             </div>
-            <div class="grid-view-item" _position="0" _installed="1" style="display: block;">
+            <div class="grid-view-item" style="display: block;">
                 <div class="file-icon">
                     <img class="thumb"
                          src="thumbnails/Monet-0353.jpg"
@@ -74,7 +74,7 @@
                     <a class="filename" href="javascript:void(0);" title="Monet-0353.jpg">Monet-0353.jpg</a>
                 </div>
             </div>
-            <div class="grid-view-item" _position="0" _installed="1" style="display: block;">
+            <div class="grid-view-item" style="display: block;">
                 <div class="file-icon">
                     <img class="thumb"
                          src="thumbnails/Monet-0379.jpg"
@@ -85,7 +85,7 @@
                     <a class="filename" href="javascript:void(0);" title="Monet-0379.jpg">Monet-0379.jpg</a>
                 </div>
             </div>
-            <div class="grid-view-item" _position="0" _installed="1" style="display: block;">
+            <div class="grid-view-item" style="display: block;">
                 <div class="file-icon">
                     <img class="thumb"
                          src="thumbnails/Monet-0540.jpg"
@@ -96,8 +96,8 @@
                     <a class="filename" href="javascript:void(0);" title="Monet-0540.jpg">Monet-0540.jpg</a>
                 </div>
             </div>
-            <%--文件夹--%>
-            <div class="grid-view-item" _position="0" _installed="1" style="display: block;">
+            <!--文件夹-->
+            <div class="grid-view-item" style="display: block;">
                 <div class="file-icon dir-large" title="">
                     <img class="thumb" style="visibility: hidden;">
                     <span class="checkbox"></span>
@@ -108,6 +108,62 @@
             </div>
         </div>
     </div>
+</div>
+<div class="img-dialog module-picPreview" id="imgs-dialog">
+    <div class="dlg-hd">
+        <a title="关闭" id="_disk_id_1" class="dlg-img-ic dlg-img-close"></a>
+    </div>
+    <div class="dlg-bd" style="width: 1027px; height: 372px;">
+        <div class="module-showPic clearfix" style="width: 907px; height: 372px;">
+            <div class="img-wrap"><img
+                    src="http://thumbnail0.baidupcs.com/thumbnail/425c7edaf9ff2b9180a470a01ef39970?fid=806013138-250528-620514250506591&amp;time=1470268800&amp;rt=pr&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-xdTe1u87jxEPDbz14k%2f%2bcVVydFY%3d&amp;expires=8h&amp;chkbd=0&amp;chkv=0&amp;dp-logid=5017763716262887189&amp;dp-callid=0&amp;size=c1280_u720&amp;quality=90"
+                    id="viewpic-image" class=""
+                    style="opacity: 1; width: 486px; height: 362px; transform: rotate(0deg); top: 0px; left: 210px;">
+            </div>
+            <div class="img-nav">
+                <div class="img-nav-left" style="display: inline;">
+                    <span class="pre-arrow"></span>
+                </div>
+                <div class="img-nav-right" style="display: inline;">
+                    <span class="next-arrow"></span>
+                </div>
+            </div>
+            <div class="img-loader" style="display: none;"></div>
+        </div>
+        <div class="module-thumbnailPic" style="width: 1027px; display: block;">
+            <div class="thumb_bc" style="width: 1027px;">
+            </div>
+            <div class="operate-area">
+                <div class="operate-container">
+                    <div class="print-pic"></div>
+                    <div class="large-pic"><em class="magnify-icon"></em></div>
+                    <div class="img-control">
+                        <em class="control control-download" title="下载图片"></em>
+                        <em class="control control-delete" title="删除图片"></em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dlg-aside">
+    <div class="module-picPreviewAside" id="picPreviewAside" style="left: 253px;">
+        <div class="box" style="display: none;">
+            <!--todo：后台信息-->
+            <ul class="file-info">
+                <li class="title" title="Monet-0375.jpg">Monet-0375.jpg</li>
+                <li class="directory">所属文件夹:
+                    <a href="javascript:void(0);" target="_blank" class="dir-name" title="莫奈">莫奈</a>
+                </li>
+                <li class="classify" style="display: none;">
+                    <span class="classify-tit">所属分类: </span>
+                    <span class="editor-name" data-index="620514250506591">无分类</span>
+                    <a href="javascript:void(0);" class="editor-icon"></a></li>
+                <li class="date">拍摄日期: <span class="info-color">神秘时间</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
 </div>
 </body>
 </html>
