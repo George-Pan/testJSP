@@ -8,7 +8,7 @@ var myTools = {};
 
 //事件
 //来源：http://www.ayqy.net/blog/js%E5%8E%9F%E7%94%9F%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%EF%BC%88%E8%B7%A8%E6%B5%8F%E8%A7%88%E5%99%A8%EF%BC%89/
-myTools.EventUtil = {
+myTools.EventUtils = {
     addHandler: function (elem, type, handler) {
         if (elem.addEventListener) {
             elem.addEventListener(type, handler, false);
@@ -115,35 +115,31 @@ myTools.EventUtil = {
 };
 
 //dom系列
-myTools.DomUtils = {
-    hasClass: function (obj, cls) {
+myTools.classUtils = {
+    has: function (obj, cls) {
         return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
     },
 
-    addClass: function (obj, cls) {
+    add: function (obj, cls) {
         if (!this.hasClass(obj, cls)) obj.className += " " + cls;
     },
 
-    removeClass: function (obj, cls) {
-        if (hasClass(obj, cls)) {
+    remove: function (obj, cls) {
+        if (this.hasClass(obj, cls)) {
             var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
             obj.className = obj.className.replace(reg, ' ');
         }
     },
 
-    toggleClass: function (obj, cls) {
-        if (hasClass(obj, cls)) {
-            removeClass(obj, cls);
+    toggle: function (obj, cls) {
+        if (this.hasClass(obj, cls)) {
+            this.removeClass(obj, cls);
         } else {
-            addClass(obj, cls);
+            this.addClass(obj, cls);
         }
-    },
-
-    toggleClassTest: function () {
-        var obj = document.getElementById('test');
-        toggleClass(obj, "testClass");
     }
-}
+};
+
 //IE 9+系列
 //document.getElementsByClassName（）
 //document.getElementsByTagName()

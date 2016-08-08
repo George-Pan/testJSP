@@ -41,14 +41,282 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, text
     display: none;
 }
 
-.module-grid-view .grid-view-item.hover-item .file-icon, .module-grid-view .grid-view-item.item-active .file-icon {
+.module-grid-view .grid-view-item:hover .file-icon, .module-grid-view .grid-view-item.item-active .file-icon {
     border: 2px solid #2e80dc
 }
 
-.module-grid-view .grid-view-item.hover-item .checkbox {
+.module-grid-view .grid-view-item:hover .checkbox {
     display: block
 }
 
 .dir-large {
     background: url(../images/folder.png) no-repeat;
+}
+/*图片显示窗口*/
+.imgDialog {
+    border: 0;
+    overflow: hidden
+}
+
+.module-picPreview {
+    font-size: 12px;
+    font-weight: 700;
+    color: #999;
+    display: block;
+    overflow: hidden;
+    background: #1f1f1f;
+    border: 0
+}
+
+.module-picPreview .dlg-hd {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 56px;
+    height: 60px;
+    z-index: 1
+}
+
+.module-picPreview .dlg-hd .dlg-img-ic {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: block;
+    background: url(http://s1.pan.bdstatic.com/box-static/file-widget-1-cdn/image/util/img/img_preview_ic_d31d0b4.png) 0 -189px no-repeat;
+    _background: url(http://s1.pan.bdstatic.com/box-static/file-widget-1-cdn/image/util/img/img_preview_ic_4e67dd1.gif) -186px -114px no-repeat
+}
+
+.module-picPreview .dlg-hd .dlg-img-ic:hover {
+    background-position: -390px -105px
+}
+
+.module-picPreview .dlg-hd .dlg-img-ic:active {
+    background-position: -66px -189px
+}
+
+.module-picPreview .dlg-bd {
+    float: left;
+    height: 100%;
+    overflow: hidden
+}
+
+.module-picPreview .dlg-aside {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.module-picPreview .aside {
+    float: right
+}
+
+.module-picPreviewAside {
+    height: 100%;
+    position: relative;
+    width: 253px
+}
+
+.module-picPreviewAside .box, .module-picPreviewAside .retract {
+    background-color: #161616
+}
+
+.module-picPreviewAside .retract {
+    width: 31px;
+    height: 100px;
+    background: url(http://s1.pan.bdstatic.com/box-static/file-widget-1-cdn/image/util/picPreviewAside/img/retract_8fd7c84.gif) 0 0 no-repeat;
+    background-color: #161616;
+    cursor: pointer;
+    position: absolute;
+    overflow: visible;
+    top: 105px;
+    left: -31px
+}
+
+.module-picPreviewAside .retract .retract-icon {
+    float: left;
+    width: 12px;
+    height: 19px;
+    background: url(http://s1.pan.bdstatic.com/box-static/file-widget-1-cdn/image/util/img/img_preview_ic_d31d0b4.png) -139px -205px no-repeat;
+    _background: url(http://s1.pan.bdstatic.com/box-static/file-widget-1-cdn/image/util/img/img_preview_ic_4e67dd1.gif) -139px -205px no-repeat;
+    margin: 40px 0 0 11px;
+    display: inline
+}
+
+.module-picPreviewAside .retract:hover .retract-icon {
+    background-position: -189px -229px
+}
+
+.module-picPreviewAside .retract:active .retract-icon {
+    background-position: -206px -205px
+}
+
+.module-picPreviewAside .retract-icon-hide .retract-icon {
+    background: url(http://s1.pan.bdstatic.com/box-static/file-widget-1-cdn/image/util/img/img_preview_ic_d31d0b4.png) -157px -205px no-repeat;
+    _background: url(http://s1.pan.bdstatic.com/box-static/file-widget-1-cdn/image/util/img/img_preview_ic_4e67dd1.gif) -157px -205px no-repeat
+}
+
+.module-picPreviewAside .retract-icon-hide:hover .retract-icon {
+    background-position: -157px -229px
+}
+
+.module-picPreviewAside .retract-icon-hide:active .retract-icon {
+    background-position: -184px -205px
+}
+
+.module-picPreviewAside .box {
+    width: 253px;
+    height: 800px;
+    color: #cdcdcd;
+    font-size: 12px;
+    height: 100%;
+    font-weight: 400
+}
+
+.module-picPreviewAside .box .file-info {
+    line-height: 20px;
+    list-style-type: none;
+    padding: 60px 0 0 10px;
+    width: 216px;
+    margin: 0 0 18px 15px
+}
+
+.module-picPreviewAside .box .position, .module-picPreviewAside .box .date, .module-picPreviewAside .box .directory, .module-picPreviewAside .box .classify {
+    color: #999;
+    *white-space: nowrap
+}
+
+.module-picPreviewAside .box .date {
+    clear: both;
+    *zoom: 1;
+    display: table
+}
+
+.module-picPreviewAside .box .classify-tit, .module-picPreviewAside .box .editor-icon, .module-picPreviewAside .box .editor-name {
+    float: left
+}
+
+.module-picPreviewAside .box .editor-icon {
+    width: 18px;
+    height: 16px;
+    background: url(http://s1.pan.bdstatic.com/box-static/file-widget-1-cdn/image/util/picPreviewAside/img/prePic_a405cf0.png) 1px 3px no-repeat;
+    position: relative;
+    margin-left: 5px
+}
+
+.box .file-info .title {
+    width: 173px;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis
+}
+
+.module-picPreviewAside .file-info .info-color {
+    color: #999
+}
+
+.module-picPreviewAside .box .downloadText {
+    color: #999
+}
+
+.module-picPreviewAside .box .directory .dir-name {
+    color: #999;
+    text-decoration: underline;
+    float: right;
+    *float: none;
+    *display: inline-block;
+    width: 144px;
+    height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis
+}
+
+.module-picPreviewAside .box .directory .dir-name-span {
+    color: #999;
+    float: right;
+    *float: none;
+    *display: inline-block;
+    width: 144px;
+    height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis
+}
+
+.module-picPreviewAside .box .directory .dir-name:hover {
+    color: #eaeaea
+}
+
+.module-picPreviewAside .box .directory .dir-name:active {
+    color: #2e80dc
+}
+
+.module-picPreviewAside .box .appDownload {
+    background: url(http://s1.pan.bdstatic.com/box-static/file-widget-1-cdn/image/util/img/img_preview_ic_d31d0b4.png) 0 -268px no-repeat;
+    _background: url(http://s1.pan.bdstatic.com/box-static/file-widget-1-cdn/image/util/img/img_preview_ic_4e67dd1.gif) 0 -268px no-repeat;
+    margin-left: 12px;
+    width: 233px;
+    height: 46px
+}
+
+.module-picPreviewAside .box .appDownload:hover {
+    background-position: -250px -268px
+}
+
+.module-picPreviewAside .box .appDownload .downloadText {
+    float: left;
+    line-height: 46px;
+    text-decoration: none;
+    width: 201px
+}
+
+.module-picPreviewAside .box .appDownload .downloadText:hover {
+    text-decoration: underline
+}
+
+.module-picPreviewAside .box .appDownload .hover {
+    text-decoration: underline
+}
+
+.module-picPreviewAside .box .appDownload .down-icon {
+    float: left;
+    width: 18px;
+    height: 25px;
+    background: url(http://s1.pan.bdstatic.com/box-static/file-widget-1-cdn/image/util/picPreviewAside/img/prePic_a405cf0.png) 4px -14px no-repeat;
+    position: relative;
+    margin: 6px;
+    margin-top: 12px
+}
+
+.module-showPic {
+    margin: 10px 60px 15px;
+    position: relative;
+    overflow: hidden;
+    height: 100%
+}
+
+.module-showPic .img-wrap {
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1
+}
+
+.module-showPic #viewpic-image {
+    vertical-align: middle;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1
 }
