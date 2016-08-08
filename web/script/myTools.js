@@ -121,21 +121,21 @@ myTools.classUtils = {
     },
 
     add: function (obj, cls) {
-        if (!this.hasClass(obj, cls)) obj.className += " " + cls;
+        if (!this.has(obj, cls)) obj.className += " " + cls;
     },
 
     remove: function (obj, cls) {
-        if (this.hasClass(obj, cls)) {
+        if (this.has(obj, cls)) {
             var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
             obj.className = obj.className.replace(reg, ' ');
         }
     },
 
     toggle: function (obj, cls) {
-        if (this.hasClass(obj, cls)) {
-            this.removeClass(obj, cls);
+        if (this.has(obj, cls)) {
+            this.remove(obj, cls);
         } else {
-            this.addClass(obj, cls);
+            this.add(obj, cls);
         }
     }
 };

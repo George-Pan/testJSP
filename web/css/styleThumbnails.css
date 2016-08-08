@@ -44,7 +44,10 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, text
 .module-grid-view .grid-view-item:hover .file-icon, .module-grid-view .grid-view-item.item-active .file-icon {
     border: 2px solid #2e80dc
 }
-
+.module-grid-view .grid-view-item.item-active .checkbox {
+    display: block;
+    background-position: -30px -36px;
+}
 .module-grid-view .grid-view-item:hover .checkbox {
     display: block
 }
